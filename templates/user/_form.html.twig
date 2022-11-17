@@ -1,0 +1,121 @@
+ {{form_start(form,{'attr':{'novalidate': 'novalidate'}} )}}
+  <table>
+<tr>
+<td> {{ form_label(form.nom_user,"nom")  }} 
+ </td>
+<td>  {{ form_widget(form.nom_user) }} 
+</td>  
+<td> {{ form_errors(form.nom_user) }} 
+</td>
+</tr>
+
+<tr>
+
+<td>  {{ form_label(form.prenom_user,"prenom") }} 
+</td> 
+<td> {{ form_widget(form.prenom_user)}} 
+ </td> 
+<td>  {{ form_errors(form.prenom_user) }} 
+</td> 
+
+</tr>
+<tr>
+
+<td>  {{ form_label(form.roles,"role") }} 
+</td> 
+<td> {{ form_widget(form.roles)}} 
+ </td> 
+<td>  {{ form_errors(form.roles) }} 
+</td> 
+
+</tr>
+<tr>
+
+<td>  {{ form_label(form.password,"password") }} 
+</td> 
+<td> {{ form_widget(form.password)}} 
+ </td> 
+<td>  {{ form_errors(form.password) }} 
+</td> 
+
+</tr>
+<tr>
+
+<td>  {{ form_label(form.email,"email") }} 
+</td> 
+<td> {{ form_widget(form.email)}} 
+ </td> 
+<td>  {{ form_errors(form.email) }} 
+</td> 
+
+</tr>
+
+<tr>
+<td>  {{ form_label(form.poste,"poste") }} 
+</td> 
+<td> {{ form_widget(form.poste)}} 
+ </td> 
+<td>  {{ form_errors(form.poste) }} 
+</td> 
+
+</tr>
+
+<tr>
+<td>  {{ form_label(form.num_carte_bancaire,"num carte bancaire") }} 
+</td> 
+<td> {{ form_widget(form.num_carte_bancaire)}} 
+ </td> 
+<td>  {{ form_errors(form.num_carte_bancaire) }} 
+</td> 
+
+</tr>
+
+<tr>
+<td>  {{ form_label(form.tel,"tel") }} 
+</td> 
+<td> {{ form_widget(form.tel)}} 
+ </td> 
+<td>  {{ form_errors(form.tel) }} 
+</td> 
+</tr>
+
+<tr>
+<td>  {{ form_label(form.lieu_ns,"lieu naissance") }} 
+</td> 
+<td> {{ form_widget(form.lieu_ns)}} 
+ </td> 
+<td>  {{ form_errors(form.lieu_ns) }} 
+</td> 
+</tr>
+
+<tr>
+<td>  {{ form_label(form.civilite,"civilite") }} 
+</td> 
+<td> {{ form_widget(form.civilite)}} 
+ </td> 
+<td>  {{ form_errors(form.civilite) }} 
+</td> 
+</tr>
+
+<tr>
+<td>  {{ form_label(form.date_ne,"date naissance") }} 
+</td> 
+<td> {{ form_widget(form.date_ne)}} 
+ </td> 
+<td>  {{ form_errors(form.date_ne) }} 
+</td> 
+</tr>
+
+<tr>
+<td>  {{ form_label(form.situation,"situation") }} 
+</td> 
+<td> {{ form_widget(form.situation)}} 
+ </td> 
+<td>  {{ form_errors(form.situation) }} 
+</td> 
+</tr>
+
+
+</table>
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
